@@ -3,8 +3,17 @@ body{
   padding: 0;
 }
 
-.background{
-  background-color: blue;
-  height: 80vh;
+.appBase{
+  display: flex;
+  flex-direction: column;
+}
+.introBackground{
+  height: 90vh;
   background-size: cover;
+  color: white;
+}
+
+.background img {
+  width: 300px;
+  padding: 10px;
 }
