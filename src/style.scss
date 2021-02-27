@@ -1,0 +1,44 @@
+$MainColor: rgb(96, 149, 62);
+body{
+    margin: 0%;
+    padding: 0;
+  }
+  
+.appBase{
+    display: flex;
+    flex-direction: column;
+  }
+
+/* ------------------------------ Intro Section ----------------------------- */
+
+  .introBackground{
+    height: 90vh;
+    background-size: cover;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 30px;
+
+    img {
+        width: 300px;
+        padding: 10px;
+      }
+    div{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    form{
+        input {
+            padding: 10px;
+        }
+    }
+  }
+  
+
+/* ------------------------------ About Us Section ----------------------------- */
+
+.aboutUs{
+    background-color: $MainColor;
+}

@@ -1,9 +1,12 @@
-import './App.css';
+// import './App.css';
+import "./style.scss"
 import Logo from "./Assets/LOGO.png"
+import About from "./Pages/About"
 function App() {
   return (
     <div className="appBase">
-    <div className="introBackground" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/image.png'})` }}>
+    <section className="introBackground" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/image.png'})` }}>
+      <div>
       <img src={Logo}/>
       <h3>JOIN THE TEAM</h3>
       <form>
@@ -14,9 +17,11 @@ function App() {
       </form>
       <button>Login</button>
     </div>
-    <div>
-      Another one
-    </div>
+    </section>
+    
+    <section>
+      <About></About>
+    </section>
     </div>
   );
 }
