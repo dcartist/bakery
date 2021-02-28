@@ -7,7 +7,7 @@ function App() {
     <div className="appBase">
     <section className="introBackground" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/image.png'})` }}>
       <div>
-      <img src={Logo}/>
+      <img src={Logo} alt="Amelia's Bakery Logo"/>
       <h3>JOIN THE TEAM</h3>
       <form>
         <p>

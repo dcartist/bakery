@@ -4,12 +4,12 @@ import Instagram from "../Assets/INSTA.png"
 
 export default function Footer() {
     return (
-        <div className="footer">
+        <section className="footer">
             <div>
                 <img src={Facebook} alt="Facebook"/>
                 <img src={Instagram} alt="Instagram"/>
             </div>
             <p>Privacy Policy</p>
-        </div>
+        </section>
     )
 }
