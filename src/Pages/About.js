@@ -11,7 +11,7 @@ export default function About() {
        
      <div className="infoSection">
   <input type="checkbox" id="tab1"></input>
-  <label className="infoSection-label" for="tab1"><span className="whiteBorderButton">LEARN MORE ABOUT US <img src={DownArrow}/></span></label>
+  <label className="infoSection-label" for="tab1"><span className="whiteBorderButton">LEARN MORE ABOUT US <img src={DownArrow} alt="down arrow"/></span></label>
   <div className="infoSection-content">
   <div>
             

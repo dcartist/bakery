@@ -1,27 +1,16 @@
 // import './App.css';
-import Logo from "./Assets/LOGO.png"
-import About from "./Pages/About"
 import Footer from "./Pages/Footer"
+import Intro from "./Pages/Intro"
+import Main from "./Pages/Main"
+import {Route, Link, Switch, Redirect} from "react-router-dom";
+
 function App() {
   return (
     <div className="appBase">
-    <section className="introBackground" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/image.png'})` }}>
-      <div>
-      <img src={Logo} alt="Amelia's Bakery Logo"/>
-      <h3>JOIN THE TEAM</h3>
-      <form>
-        <p>
-        <input type="text" placeholder="Email Address"></input>
-        </p>
-        <button className="smallButton greenFilledButton"> SIGN UP</button>
-        <button className="smallButton greenBorderButton">Login</button>
-      </form>
-    </div>
-    </section>
-    
-    <section>
-      <About></About>
-    </section>
+    <switch>
+      <Route path="/" exact component={Intro}></Route>
+      <Route path="/main" exact component={Main}></Route>
+    </switch>
     <section>
     <Footer></Footer>
     </section>
