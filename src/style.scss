@@ -1,0 +1,313 @@
+$MainColor: rgb(96, 149, 62);
+$FooterColor: rgb(81, 46, 38);
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: $FooterColor;
+}
+
+.appBase {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------------------------------- Buttons -------------------------------- */
+.greenFilledButton {
+    background-color: $MainColor;
+    border: 2px $MainColor solid;
+    color: white;
+
+}
+
+.greenBorderButton {
+    background-color: transparent;
+    border: 2px $MainColor solid;
+    color: white;
+}
+
+.whiteBorderButton {
+    background-color: transparent;
+    border: 2px white solid;
+    color: white;
+}
+
+.smallButton {
+    height: 30px;
+    width: 150px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+
+
+
+/* ------------------------------ Intro Section ----------------------------- */
+
+.introBackground {
+    min-height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 30px;
+
+    img {
+        width: 60%;
+        padding: 5px;
+        margin: auto;
+    }
+
+    div {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    form {
+        input {
+            padding: 10px;
+            width: 300px;
+        }
+
+        button {
+            margin: 5px auto;
+            display: block;
+        }
+    }
+
+}
+
+
+/* ------------------------------ About Us Section ----------------------------- */
+
+.aboutUs {
+    background-color: $MainColor;
+    padding: 30px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.about {
+
+    span {
+        width: 50%;
+        padding: 30px;
+        margin: auto;
+        font-size: 1.6rem;
+
+        img {
+            //  vertical-align: baseline;
+            margin-left: 20px;
+            color: white;
+            height: 20px;
+            padding: 0;
+        }
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .infoSection {
+        overflow: hidden;
+
+        &-label {
+            display: flex;
+            padding: 1em;
+            cursor: pointer;
+            background: $MainColor;
+            color: #fff;
+            //   margin:auto;
+            text-align: center;
+        }
+
+        &-content {
+            max-height: 0;
+            padding: 0 1em;
+            background: white;
+            transition: all 0.35s;
+        }
+    }
+
+    input:checked {
+        ~.infoSection-content {
+            max-height: 100vh;
+            padding: 1em;
+        }
+    }
+}
+
+/* --------------------------------- Footer --------------------------------- */
+
+.footer {
+    background: $FooterColor;
+    min-height: 200px;
+    max-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    img {
+        height: 50px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+/**********
+ * MOBILE *
+ **********/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* ------------------------------ Intro Section ----------------------------- */
+
+    .introBackground {
+        min-height: 70vh;
+
+        background-position: 45%;
+        grid-template-columns: 1fr;
+
+        img {
+            width: 80%;
+        }
+
+        h3 {
+            margin-top: -5px;
+        }
+
+        form {
+            margin: 0;
+
+            input {
+                width: 80vw;
+            }
+
+        }
+
+    }
+
+
+    /* ------------------------------ About Us Section ----------------------------- */
+
+
+    .about {
+
+        span {
+            width: 90%;
+            padding: 30px;
+            font-size: 1.4rem;
+        }
+
+        input {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    /* ------------------------------ Intro Section ----------------------------- */
+
+    .introBackground {
+        min-height: 60vh;
+        grid-template-columns: 1fr 2fr;
+
+        img {
+            width: 200px;
+        }
+
+        h3 {
+            margin-top: -5px;
+        }
+
+        form {
+            margin: 0;
+        }
+
+    }
+
+
+    /* ------------------------------ About Us Section ----------------------------- */
+
+    .about {
+
+        span {
+            width: 90%;
+            padding: 30px;
+            font-size: 1.4rem;
+        }
+
+    }
+
+}
+
+
+/**********
+ * TABLET *
+ **********/
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+    /* ------------------------------ Intro Section ----------------------------- */
+    .introBackground {
+        min-height: 60vh;
+
+        img {
+            width: 70%;
+        }
+    }
+}
+
+/* Large devices (laptops/desktops) */
+@media only screen and (min-width: 1025px) {
+
+    /* ------------------------------ Intro Section ----------------------------- */
+
+    .introBackground {
+        min-height: 70vh;
+        background-size: cover;
+        padding: 30px;
+        grid-template-columns: 1fr 2fr;
+
+        img {
+            width: 70%;
+
+        }
+
+
+    }
+
+
+
+}
