@@ -18,8 +18,8 @@ export default function Intro(props) {
     <div className={toggleLogin}>
       <div className="login-overlay"></div>
           <div className="login">  
-          <p class="close" id="close">
-                                <button class="closeButton" onClick={toggleButton}> X Close</button>
+          <p className="close" id="close">
+                                <button className="closeButton" onClick={toggleButton}> X Close</button>
                             </p>
           <form>
         <p>Please enter your email to login </p>
