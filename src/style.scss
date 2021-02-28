@@ -1,4 +1,5 @@
 $MainColor: rgb(96, 149, 62);
+$FooterColor: rgb(81,46,38);
 body{
     margin: 0%;
     padding: 0;
@@ -128,5 +129,34 @@ body{
 /* --------------------------------- Footer --------------------------------- */
 
 .footer{
-    
+    background: $FooterColor;
+    min-height: 200px;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    img {
+        height: 50px;
+        padding: 10px 20px;
+    }
 }
+
+
+/**********
+ * TABLET *
+ **********/
+
+
+
+
+
+
+
+ 
+    
+/**********
+ * MOBILE *
+ **********/
