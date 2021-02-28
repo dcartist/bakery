@@ -15,12 +15,16 @@ function App() {
     e.preventDefault()
     console.log(e.target.value)
   }
+  function handleLoginChange(e){
+    e.preventDefault()
+    console.log(e.target.value)
+  }
   return (
     <div className="appBase">
       
       {location.pathname !== '/'? <Navigation Email={Email}></Navigation> : null}
     <Switch>
-      <Route path="/" exact render={(props)=><Intro handleEmailChange={handleEmailChange}></Intro>}></Route>
+      <Route path="/" exact render={(props)=><Intro handleEmailChange={handleEmailChange} handleLoginChange={handleLoginChange}></Intro>}></Route>
       <Route path="/main" exact component={Main}></Route>
     </Switch>
     <section>
