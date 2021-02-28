@@ -175,7 +175,38 @@ body {
 }
 
 
+/* ------------------------------ Main Section ------------------------------ */
+.main {
+    background-color: white;
+    margin: 0;
+    padding: 0 25px;
+    
+    .dishesDisplay{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
 
+        
+        div{
+            margin:auto;
+
+            img{
+                width: 100%;
+                margin: auto;
+            }
+
+            h3 {
+                text-align: center;
+                min-height: 30px;
+                margin-top: 10px;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        
+    }
+}
 
 
 

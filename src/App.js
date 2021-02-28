@@ -2,7 +2,7 @@
 import Footer from "./Pages/Footer"
 import Intro from "./Pages/Intro"
 import Main from "./Pages/Main"
-import {Route, Link, Switch, Redirect} from "react-router-dom";
+import {Route} from "react-router-dom";
 
 function App() {
   return (
