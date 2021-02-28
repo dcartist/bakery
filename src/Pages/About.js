@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 
-const [toggleButton, settoggleButton] = useState(initialState)
 
 export default function About() {
+    const [toggleButton, settoggleButton] = useState(true)
     return (
         <section>
         <div className="aboutUs">

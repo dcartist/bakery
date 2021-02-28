@@ -12,9 +12,9 @@ function App() {
         <p>
         <input type="text" placeholder="Email Address"></input>
         </p>
-        <button> SIGN UP</button>
+        <button className="smallButton greenFilledButton"> SIGN UP</button>
+        <button className="smallButton greenBorderButton">Login</button>
       </form>
-      <button>Login</button>
     </div>
     </section>
     
