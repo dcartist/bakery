@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import DownArrow from "../Assets/downArrow.svg"
 export default function About() {
     const [toggleButton, settoggleButton] = useState('hide')
 
@@ -11,7 +11,7 @@ export default function About() {
        
      <div className="infoSection">
   <input type="checkbox" id="tab1"></input>
-  <label className="infoSection-label" for="tab1"><span className="whiteBorderButton">LEARN MORE ABOUT US</span></label>
+  <label className="infoSection-label" for="tab1"><span className="whiteBorderButton">LEARN MORE ABOUT US <img src={DownArrow}/></span></label>
   <div className="infoSection-content">
   <div>
             
