@@ -53,7 +53,7 @@ select:focus
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1.5px;
-
+    
 }
 
 
@@ -71,13 +71,13 @@ select:focus
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding: 30px;
-
+    
     img {
         width: 60%;
         padding: 5px;
         margin: auto;
     }
-
+    
     div {
         display: flex;
         width: 100%;
@@ -85,7 +85,7 @@ select:focus
         text-align: center;
         justify-content: center;
     }
-
+    
     form {
         input {
             padding: 10px;
@@ -96,18 +96,18 @@ select:focus
         ::placeholder {
             color: rgb(117, 117, 117);
             opacity: .7; 
-          }
-          
-          :-ms-input-placeholder {
+        }
+        
+        :-ms-input-placeholder {
             color: rgb(117, 117, 117);
             opacity: .7; 
-          }
-          
-          ::-ms-input-placeholder { 
+        }
+        
+        ::-ms-input-placeholder { 
             color: rgb(117, 117, 117);
             opacity: .7; 
-          }
-
+        }
+        
         button {
             margin: 5px auto;
             display: block;
@@ -116,6 +116,7 @@ select:focus
     .loginButton{
         margin: 5px auto;
     }
+    /* ---------------------------------- Modal --------------------------------- */
     .login{
         z-index: 1125;
         left: 50%;
@@ -144,8 +145,28 @@ select:focus
         -webkit-box-sizing: border-box;
         border: 2px solid rgb(250, 250, 250);
         box-shadow: 0px 0px 0px 20px black;
+        
+        .close{
+            text-align: right;
+            margin-top:-50px;
+            padding: 10px;
+            /* background-color: black; */
+            color: white;
+            width: 100%;
+            margin-left: 45px;
+            position: relative;
+            margin-bottom: 30px;
+        }
 
-       
+        .closeButton{
+            text-align: right;
+            margin-top:-40px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: 0;
+            position: relative;
+        }
     }
 
     .login-overlay{
@@ -160,7 +181,6 @@ select:focus
 
 }
 
-/* ---------------------------------- Modal --------------------------------- */
 .show {
     display: block !important;
 }
@@ -218,6 +238,9 @@ select:focus
             background: white;
             transition: all 0.35s;
         }
+        &-content div {
+            padding-top: 2em;
+        }
     }
 
     input:checked {
@@ -248,7 +271,39 @@ select:focus
     }
 }
 
-
+/* ------------------------------- Navigation ------------------------------- */
+.Navigation{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+        margin-left: 10px;
+        height: 80px;
+        border: white 1px solid;
+        border-radius: 50%;
+    }
+    ul{
+        display: inline;
+        li{
+            display: inline;
+            padding: 5px;   
+            a{
+                color: white;
+            }
+            &::after{
+                padding: 0 10px;
+                content: '|';
+                
+            }
+            &:last-child::after{
+                content:'';
+            }
+        }
+    }
+}
 /* ------------------------------ Main Section ------------------------------ */
 .main {
     background-color: white;
@@ -315,7 +370,15 @@ select:focus
             }
 
         }
+        .login {
+            background: black;
+            max-width: 90%; 
 
+            input{
+                width: 100%;
+                
+            }
+        }
     }
 
 
