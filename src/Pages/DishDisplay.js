@@ -7,8 +7,6 @@ export default function DishDisplay() {
             axios
             .get(`${process.env.REACT_APP_API_CAT}`)
             .then((res) => {
-                console.log(res);
-                console.log(res.data.meals);
                 setdata(res.data.meals)
             })
             .catch((err) => console.log(err));

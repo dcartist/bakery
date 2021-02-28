@@ -1,16 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 import DownArrow from "../Assets/downArrow.svg"
 export default function About ()
 {
-    const [toggleButton, settoggleButton]=useState( 'hide' )
-
-    function toggling ()
-    {
-        toggleButton==='show'? settoggleButton( 'hide' ):settoggleButton( 'show' )
-    }
+    
     return (
         <section className="about">
-
             <div className="infoSection">
                 <input type="checkbox" id="tab1"></input>
                 <label className="infoSection-label" for="tab1"><span className="whiteBorderButton">LEARN MORE ABOUT US <img src={DownArrow} alt="down arrow" /></span></label>

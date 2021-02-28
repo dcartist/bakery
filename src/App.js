@@ -2,15 +2,20 @@
 import Footer from "./Pages/Footer"
 import Intro from "./Pages/Intro"
 import Main from "./Pages/Main"
-import {Route} from "react-router-dom";
+import Navigation from "./Pages/Navigation"
+import {Route, Switch, useLocation} from "react-router-dom";
 
 function App() {
+
+  const location = useLocation();
+
   return (
     <div className="appBase">
-    <switch>
+      {location.pathname !== '/'? <Navigation></Navigation> : null}
+    <Switch>
       <Route path="/" exact component={Intro}></Route>
       <Route path="/main" exact component={Main}></Route>
-    </switch>
+    </Switch>
     <section>
     <Footer></Footer>
     </section>
