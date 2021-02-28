@@ -1,6 +1,7 @@
 // import './App.css';
 import Logo from "./Assets/LOGO.png"
 import About from "./Pages/About"
+import Footer from "./Pages/Footer"
 function App() {
   return (
     <div className="appBase">
@@ -20,6 +21,9 @@ function App() {
     
     <section>
       <About></About>
+    </section>
+    <section>
+    <Footer></Footer>
     </section>
     </div>
   );

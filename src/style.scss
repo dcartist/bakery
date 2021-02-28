@@ -1,4 +1,5 @@
 $MainColor: rgb(96, 149, 62);
+$FooterColor: rgb(81,46,38);
 body{
     margin: 0%;
     padding: 0;
@@ -39,7 +40,7 @@ body{
 /* ------------------------------ Intro Section ----------------------------- */
 
   .introBackground{
-    height: 90vh;
+    height: 80vh;
     background-size: cover;
     color: white;
     display: grid;
@@ -47,8 +48,9 @@ body{
     padding: 30px;
 
     img {
-        width: 250px;
+        width: 200px;
         padding: 5px;
+        margin: auto;
       }
     div{
         display: flex;
@@ -76,5 +78,85 @@ body{
 .aboutUs{
     background-color: $MainColor;
     padding: 30px;
-    color: red;
 }
+
+.show {
+    display: block; 
+}
+.hide{
+    display: none;
+}
+.about {
+
+    span{
+        width: 50%;
+        padding: 30px;
+        margin: auto;
+        font-size: 1.6rem;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+      }
+
+      .infoSection{
+        overflow: hidden;
+        &-label {
+          display: flex;
+          padding: 1em;
+          cursor: pointer;
+          background: $MainColor;
+          color: #fff;
+        //   margin:auto;
+        text-align: center;
+        }
+        &-content {
+          max-height: 0;
+          padding: 0 1em;
+          background: white;
+          transition: all 0.35s;
+        }
+      }
+      input:checked {
+        ~ .infoSection-content {
+          max-height: 100vh;
+          padding: 1em;
+        }
+      }
+}
+
+/* --------------------------------- Footer --------------------------------- */
+
+.footer{
+    background: $FooterColor;
+    min-height: 200px;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    img {
+        height: 50px;
+        padding: 10px 20px;
+    }
+}
+
+
+/**********
+ * TABLET *
+ **********/
+
+
+
+
+
+
+
+ 
+    
+/**********
+ * MOBILE *
+ **********/
