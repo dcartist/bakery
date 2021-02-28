@@ -9,6 +9,24 @@ body{
     flex-direction: column;
   }
 
+/* --------------------------------- Buttons -------------------------------- */
+.greenFilledButton {
+    background-color: $MainColor;
+    border: 2px $MainColor solid;
+    color: white;
+
+}
+.greenBorderButton {
+    background-color: transparent;
+    border: 2px $MainColor solid;
+    color: white;
+}
+.whiteBorderButton {
+    background-color: transparent;
+    border: 2px white solid;
+    color: white;
+}
+
 /* ------------------------------ Intro Section ----------------------------- */
 
   .introBackground{
@@ -33,6 +51,16 @@ body{
         input {
             padding: 10px;
         }
+        button {
+            background-color: $MainColor;
+            border: 2px $MainColor solid;
+            color: white;
+        }
+    }
+    button {
+        background-color: transparent;
+        border: 2px $MainColor solid;
+        color: white;
     }
   }
   
@@ -41,4 +69,6 @@ body{
 
 .aboutUs{
     background-color: $MainColor;
+    padding: 30px;
+    color: red;
 }

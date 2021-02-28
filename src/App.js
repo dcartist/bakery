@@ -1,5 +1,4 @@
 // import './App.css';
-import "./style.scss"
 import Logo from "./Assets/LOGO.png"
 import About from "./Pages/About"
 function App() {
