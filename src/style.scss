@@ -184,8 +184,8 @@ body {
     .dishesDisplay{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        
-
+        column-gap: 25px;
+        row-gap: 25px;
         
         div{
             margin:auto;

@@ -15,7 +15,7 @@ export default function DishDisplay() {
 	 }, []);
     return (
         <div className="dishesDisplay">
-            {data.filter(info => !info.idMeal.includes("52891")).map((item, index)=>(<div key={index}><h3>{item.strMeal}</h3> <img src={item.strMealThumb}></img></div>))}
+            {data.filter(info => !info.idMeal.includes("52891")).map((item, index)=>(<div key={index}><h3>{item.strMeal}</h3> <img src={item.strMealThumb} alt={item.strMeal}></img></div>))}
             
         </div>
     )
