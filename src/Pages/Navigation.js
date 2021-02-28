@@ -1,9 +1,12 @@
 import React from 'react'
+import Logo from "../Assets/LOGO.png"
 
-export default function Navigation() {
+export default function Navigation(props) {
     return (
-        <div>
+        <div className="Navigation">
             Navigation
+
+      <img src={Logo} alt="Amelia's Bakery Logo"/>
         </div>
     )
 }

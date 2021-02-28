@@ -4,16 +4,23 @@ import Intro from "./Pages/Intro"
 import Main from "./Pages/Main"
 import Navigation from "./Pages/Navigation"
 import {Route, Switch, useLocation} from "react-router-dom";
+import react, {useState} from "react"
 
 function App() {
 
   const location = useLocation();
+  const [Email, setEmail] = useState('')
 
+  function handleEmailChange(e){
+    e.preventDefault()
+    console.log(e.target.value)
+  }
   return (
     <div className="appBase">
-      {location.pathname !== '/'? <Navigation></Navigation> : null}
+      
+      {location.pathname !== '/'? <Navigation Email={Email}></Navigation> : null}
     <Switch>
-      <Route path="/" exact component={Intro}></Route>
+      <Route path="/" exact render={(props)=><Intro handleEmailChange={handleEmailChange}></Intro>}></Route>
       <Route path="/main" exact component={Main}></Route>
     </Switch>
     <section>

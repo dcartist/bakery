@@ -75,8 +75,24 @@ body {
     form {
         input {
             padding: 10px;
+            letter-spacing: 1.5px;
             width: 300px;
+            
         }
+        ::placeholder {
+            color: rgb(117, 117, 117);
+            opacity: .7; 
+          }
+          
+          :-ms-input-placeholder {
+            color: rgb(117, 117, 117);
+            opacity: .7; 
+          }
+          
+          ::-ms-input-placeholder { 
+            color: rgb(117, 117, 117);
+            opacity: .7; 
+          }
 
         button {
             margin: 5px auto;
