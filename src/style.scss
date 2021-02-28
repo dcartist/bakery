@@ -76,5 +76,12 @@ body{
 .aboutUs{
     background-color: $MainColor;
     padding: 30px;
-    color: red;
+}
+
+.show {
+    display: block; 
+}
+.hide{
+    display: none;
+
 }
