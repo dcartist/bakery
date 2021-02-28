@@ -8,6 +8,19 @@ body {
     background-color: $FooterColor;
 }
 
+button,
+textarea,
+input,
+select,
+a, 
+input:focus,
+textarea:focus,
+select:focus
+{
+    outline: none;
+}
+
+
 .appBase {
     display: flex;
     flex-direction: column;
