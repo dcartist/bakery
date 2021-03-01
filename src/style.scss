@@ -272,18 +272,20 @@ select:focus
 }
 
 /* ------------------------------- Navigation ------------------------------- */
-.Navigation{
+.navigation{
     background-color: black;
     color: white;
     padding: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
+
     img {
-        margin-left: 10px;
+        margin: 2px 2px 5px 10px;
         height: 80px;
         border: white 1px solid;
         border-radius: 50%;
+        
     }
     ul{
         display: inline;
@@ -304,13 +306,50 @@ select:focus
         }
     }
 }
+.welcome{
+    background-color: rgb(43, 43, 43);
+    padding: 7px;
+    padding-left: 20px;
+    color: white;
+}
 /* ------------------------------ Main Section ------------------------------ */
 .main {
     background-color: white;
     margin: 0;
-    padding: 0 25px;
-    
+    padding: 0;
+    .dishSearch{
+        width: 100%;
+        background-color: $MainColor;
+        display: flex;
+        justify-content: center;
+        input {
+            margin: 5px auto;
+            height: 35px;
+            padding: 10px;
+            width: 50%;
+        }
+    }
+    .noResults{
+        min-height: 65vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h2{
+            margin-bottom: 0;
+            padding-bottom: 0;
+            text-align: center;
+        }
+        img {
+            width: auto;
+            margin: 0;
+            // height: 60vh;
+            width: 50vw;
+        }
+
+    }
     .dishesDisplay{
+        padding: 25px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 25px;
@@ -381,6 +420,67 @@ select:focus
         }
     }
 
+    /* ------------------------------ Main Section ------------------------------ */
+.main {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    .dishSearch{
+        width: 100%;
+        background-color: $MainColor;
+        display: flex;
+        justify-content: center;
+        input {
+            margin: 5px auto;
+            height: 35px;
+            padding: 10px;
+            width: 50%;
+        }
+    }
+    .noResults{
+        min-height: 65vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2{
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        img {
+            width: auto;
+            margin: 0;
+            width: 80vw;
+            height: auto;
+        }
+
+    }
+    .dishesDisplay{
+        padding: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 25px;
+        row-gap: 20px;
+        
+        div{
+            margin:auto;
+
+            img{
+                width: 100%;
+                margin: auto;
+            }
+
+            h3 {
+                text-align: center;
+                min-height: 30px;
+                margin-top: 10px;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        
+    }
+}
 
     /* ------------------------------ About Us Section ----------------------------- */
 
