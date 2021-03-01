@@ -6,7 +6,6 @@ export default function DishDisplay ()
 {
     const [data, setdata]=useState( [] )
     const [dataResults, setReults]=useState( [] )
-    const [searched, setSearch]=useState( '' )
     const [wasSearch, setWasSearch]=useState(false)
     useEffect( () =>
     {
@@ -19,7 +18,7 @@ export default function DishDisplay ()
             .catch( ( err ) => console.log( err ) );
     }, [] );
     function search ( e )
-    {   if (wasSearch == false && e.target.value.length !== 0) {
+    {   if (wasSearch === false && e.target.value.length !== 0) {
         setWasSearch(true)
     }  else if (e.target.value.length !== 0){
         setWasSearch(true)
@@ -38,7 +37,6 @@ export default function DishDisplay ()
             <section>
                 <div className="dishSearch">
                     <input type="text" onChange={search} placeholder="Search by name"></input>
-                    {searched}
                 </div>
                 <div className="dishesDisplay">
                     {data.filter( info => !info.idMeal.includes( "52891" ) ).map( ( item, index ) => ( <div key={index}><h3>{item.strMeal}</h3> <img src={item.strMealThumb} alt={item.strMeal}></img></div> ) )}
@@ -47,7 +45,7 @@ export default function DishDisplay ()
         )
     } else
     {
-        if ( dataResults.length==0 )
+        if ( dataResults.length === 0 )
         {
             return (
                 <section>

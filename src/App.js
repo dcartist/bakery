@@ -1,27 +1,23 @@
-// import './App.css';
 import Footer from "./Pages/Footer"
 import Intro from "./Pages/Intro"
 import Main from "./Pages/Main"
 import Navigation from "./Pages/Navigation"
-import {Route, Switch, useLocation, Redirect} from "react-router-dom";
+import {Route, Switch, useLocation} from "react-router-dom";
 import { useHistory } from "react-router-dom";
-
-import react, {useState} from "react"
+import {useState} from "react"
 
 function App() {
   let history = useHistory();
   const location = useLocation();
   const [message, setMessage] = useState(`${String.fromCharCode(160)}`)
   const [Email, setEmail] = useState('')
-
+  console.log("Hi!!!")
   function handleEmailChange(e){
     e.preventDefault()
-    console.log(e.target.value)
     setEmail(e.target.value)
   }
   function handleLoginChange(e){
     e.preventDefault()
-    console.log(e.target.value)
     setEmail(e.target.value)
   }
   function validateEmail(){
@@ -33,8 +29,6 @@ function App() {
     } else {
       setMessage("I'm sorry your email is invalid")
     }
-    // Email.match(emailValidate) ? setMessage("Congrats Your email Works")  : setMessage("I'm sorry your email is invalid")
-    
   }
 
   return (
