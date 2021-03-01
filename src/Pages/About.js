@@ -11,13 +11,37 @@ export default function About ()
                 <div className="infoSection-content">
                     <div>
 
+                        <h2>Amelia's Bakery</h2>
+                        <p>
+                        Starting on Saturday and worked until Sunday, Amelia's bakery is a code challenge based on a splash page's mockup design. </p>
+                        <p>
+                        The project contains two sections:</p>
+                        <ol>
+                            <li>HTML version</li>
+                            <ul>
+                                <li>Github: <a href="https://github.com/dcartist/bakeryHTM" rel="noopener noreferrer" target="_blank">https://github.com/dcartist/bakeryHTML</a></li>
+                                <li>Deployed: <a href="https://abakery.vercel.app" rel="noopener noreferrer" target="_blank">https://abakery.vercel.app</a></li>
+                            </ul>
+                            <li>React version</li>
+                            <ul>
+                                <li>Github: <a href="https://github.com/dcartist/bakery" rel="noopener noreferrer" target="_blank">https://github.com/dcartist/bakery</a></li>
+                                <li>Deployed: <a href="https://ameliasbakery.vercel.app" rel="noopener noreferrer" target="_blank">https://ameliasbakery.vercel.app</a></li>
+                            </ul>
+                        </ol>
+                        <p>
+                        The HTML version is created with vanilla js. The features contain form validation and a modal. A user can enter their email and view a message if their email is valid on both login and signup. 
+                        </p>
+                        <p>
+                        The second version is created with the react framework. The features contained in this projects are:
+                        </p>
+                        <ul>
+                            <li><b>Form Validation</b>:  A user can enter their email and view a message if their email is valid on both login and signup. They must have a valid email address to proceed to the dashboard.</li>
+                            <li><b>Modal</b>: The user can log in to the dashboard</li>
+                            <li><b>Dashboard</b>: The user can function search through desserts from the MealDB API (<a href="https://www.themealdb.com/api.php" rel="noopener noreferrer" target="_blank">https://www.themealdb.com/api.php</a></li>
+                        </ul>
+                        <p>The npm packages in the react version are Node-Sass, Axios, React-Router-Dom, Semantic React UI (for global font default).</p>
+                        <p>Both versions are mobile responsive.</p>
 
-                        <p>
-                            This my implore grave flown shore this blessed and out. On soul this expressing its countenance flung, lord whether tell.
-            </p>
-                        <p>
-                            Expressing dying so ghastly chamber beast. Name peering a stillness door in hope in many, take be nevermore on is still chamber terrors explore. Whispered still nothing whose so, madam door be cannot but burden forgotten god nepenthe, shutter flirt visiter chamber soul prophet these peering shall. My an decorum footfalls and tapping is. But by a shutter the cried vainly still moment burden. Word above nevermore door many outpour i till than some, i the weak weary sign heart, explore cannot as my reclining, terrors said and a fancy, or had or nothing a within. Fowl a my never bird radiant my thereis. Its evermore stronger sitting thing came my from nodded. Fowl press all plume leave the upon lonely. Placid each raven tempest decorum footfalls a tempest this undaunted. Have days whose nothing gloating. Chamber linking in or doubting my it i its your, velvet with though upon more of by hath from, what dreaming craven lies muttered. Though heaven lenore token youhere sitting rustling. And his surely maiden ashore a that chamber or, tufted whom my hear the, respiterespite he mystery has respiterespite. Lenore angels i said ever that gloated, yore the did the rustling wind into hesitating sad, nevermore laden i into ebony craven, my from this to this at, that swung i door door, that the back the explore presently caught with smiling this, bore dreaming mystery of me. Once with let while merely unbroken the whom, gloating i chamber unbroken outpour velvet shore thy on. Raven sitting sitting peering nothing truly name, if soul oer thereis ungainly the and on lie. Gave fast caught door rare the sat, soon scarcely implore that or yore or soul gloating. Still of window door perfumed on lining censer lamplight. Unseen that the nevermore or floor, vainly a heart sought curious then we flutter lamplight morrow, murmured what is upon morrow thee nevermore was. And the chamber the a window burning nothing and, that word he least a. Thing i he lord i my. Parting we name thy obeisance and napping. Tapping door my not quaint. Has blessed the and no the only leave, days no he now sure whispered weary the take sorrowsorrow, tapping and as than the is more, eagerly velvet the my disaster evermore door while. Flown wide tis the nameless flown. Long this door door whom opened dared lost within lore. Door bends still.
-            </p>
                     </div>
                 </div>
             </div>
