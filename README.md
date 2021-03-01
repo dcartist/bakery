@@ -1,6 +1,6 @@
 # Amelia's Bakery
 
-<img src="./src/Assets/cupcake.jpg" alt="cupcake" style="zoom:20%;" />
+<img src="./src/Assets/cupcake.jpg" alt="cupcake" style="zoom:20%;"  width="400"/>
 
 ------
 
