@@ -1,27 +1,50 @@
 // import './App.css';
-import Logo from "./Assets/LOGO.png"
-import About from "./Pages/About"
 import Footer from "./Pages/Footer"
+import Intro from "./Pages/Intro"
+import Main from "./Pages/Main"
+import Navigation from "./Pages/Navigation"
+import {Route, Switch, useLocation, Redirect} from "react-router-dom";
+import { useHistory } from "react-router-dom";
+
+import react, {useState} from "react"
+
 function App() {
+  let history = useHistory();
+  const location = useLocation();
+  const [message, setMessage] = useState(`${String.fromCharCode(160)}`)
+  const [Email, setEmail] = useState('')
+
+  function handleEmailChange(e){
+    e.preventDefault()
+    console.log(e.target.value)
+    setEmail(e.target.value)
+  }
+  function handleLoginChange(e){
+    e.preventDefault()
+    console.log(e.target.value)
+    setEmail(e.target.value)
+  }
+  function validateEmail(){
+    let emailValidate = /^[^@]+@\w+(\.\w+)+\w$/
+    if (Email.match(emailValidate) ){
+      setMessage("Congrats Your email Works")
+      history.push('/main')
+
+    } else {
+      setMessage("I'm sorry your email is invalid")
+    }
+    // Email.match(emailValidate) ? setMessage("Congrats Your email Works")  : setMessage("I'm sorry your email is invalid")
+    
+  }
+
   return (
     <div className="appBase">
-    <section className="introBackground" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/image.png'})` }}>
-      <div>
-      <img src={Logo} alt="Amelia's Bakery Logo"/>
-      <h3>JOIN THE TEAM</h3>
-      <form>
-        <p>
-        <input type="text" placeholder="Email Address"></input>
-        </p>
-        <button className="smallButton greenFilledButton"> SIGN UP</button>
-        <button className="smallButton greenBorderButton">Login</button>
-      </form>
-    </div>
-    </section>
-    
-    <section>
-      <About></About>
-    </section>
+      
+      {location.pathname !== '/'? <Navigation Email={Email}></Navigation> : null}
+    <Switch>
+      <Route path="/" exact render={(props)=><Intro handleEmailChange={handleEmailChange} handleLoginChange={handleLoginChange} message={message} validateEmail={validateEmail} setEmail={setEmail} setMessage={setMessage}></Intro>}></Route>
+      <Route path="/main" exact component={Main}></Route>
+    </Switch>
     <section>
     <Footer></Footer>
     </section>
