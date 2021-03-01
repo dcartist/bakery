@@ -12,7 +12,7 @@ export default function Navigation(props) {
         </ul>
         </div>
         <div className="welcome">
-            Welcome {props.Email.length == 0 ? "You forgot to sign in" : props.Email}
+            Welcome {props.Email.length === 0 ? "Now known as Bob Ross" : props.Email}
         </div>
         </div>
        
